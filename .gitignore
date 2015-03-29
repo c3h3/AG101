@@ -1,0 +1,10 @@
+.project
+.pydevproject
+ag101.egg-info/
+build/
+dist/
+*.pyc
+
+
+
+
