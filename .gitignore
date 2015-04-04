@@ -4,7 +4,7 @@ ag101.egg-info/
 build/
 dist/
 *.pyc
-
+.ipynb_checkpoints/
 
 
 
