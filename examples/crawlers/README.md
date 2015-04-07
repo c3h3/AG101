@@ -9,7 +9,7 @@ Youtube Channels:
 - ShogunToolbox
 - PyCon2014
 - taipeipython
-- EnthoughtMedia (Scipy2014)
+- EnthoughtMedia (Scipy2014)#Enthought
 - iyenlung
 
 Python Videos:
