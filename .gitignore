@@ -4,7 +4,6 @@ ag101.egg-info/
 build/
 dist/
 *.pyc
-
-
-
-
+.ipynb_checkpoints/
+AG101/examples/crawlers/[test-run]youtube_crawler-py.ipynb
+AG101/StudyNote/

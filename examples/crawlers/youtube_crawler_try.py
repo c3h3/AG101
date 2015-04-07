@@ -23,8 +23,12 @@ video_data_df = video_data_df.drop("ytid",1)
 video_data_df["_id"] = video_data_df["youtubeVideoId"].map(lambda xx:"YTV_"+xx)
 video_data_df["type"] = "youtube"
 
-db_ids=[post['_id'] for post in learning_resources_collection.find()]
-new_ids=video_data_df["_id"].tolist()
-insert_ids=filter(lambda x:x not in db_ids,new_ids)
-new=video_data_df[video_data_df["_id"].isin(insert_ids)]
-if new.to_dict(orient="records")!=[]:learning_resources_collection.insert(new.to_dict(orient="records")) 
+a=1
+c=0
+for inter in video_data_df.to_dict(orient="records"):
+    a=c
+    for post in learning_resources_collection.find():
+        if inter['_id']==post['_id']:
+               c+=1
+    if a==c:
+        learning_resources_collection.insert(inter)
